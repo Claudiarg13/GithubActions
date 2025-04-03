@@ -22,7 +22,7 @@ jobs:
     - name: Installar requirements
       working-directory: code/Python
       run: |
-        pip install -r code/python/requirements.txt
+        pip install -r code/Python/requirements.txt
 
     - name: Run linters
       working-directory: code/Python
