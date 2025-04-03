@@ -10,19 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: "3.11"
-
-    - name: Install dependencies
+    - name: Installar requirements
       working-directory: code/Python
       run: |
         pip install -r requirements.txt
-        pip install flake8 bandit
 
     - name: Run linters
       working-directory: code/Python
