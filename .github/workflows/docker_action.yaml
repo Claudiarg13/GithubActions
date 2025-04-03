@@ -28,3 +28,4 @@ jobs:
         context: ./code/Python
         file: ./code/Python/Dockerfile
         push: true
+        tags: claudiarg13/calculadora:latest
