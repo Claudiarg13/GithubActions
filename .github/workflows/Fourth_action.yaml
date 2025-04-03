@@ -3,9 +3,9 @@ name: Event Comit - Single Job
 on:
   push:
     branches:
-      - '*'
-      
-workflow_dispatch:
+      - main
+  
+  workflow_dispatch:
     inputs:
       debug_mode:
         type: boolean
