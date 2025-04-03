@@ -10,26 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Check out code
+      uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
 
-    - name: Check out code
-      uses: actions/checkout@v3
-
-    - name: Installar requirements
+    - name: Instalar requirements
       working-directory: code/Python
       run: |
-        pip install -r code/Python/requirements.txt
+        pip install -r requirements.txt
 
-    - name: Run linters
+    - name: Run linters (flake8)
       working-directory: code/Python
       run: |
         flake8 .
 
-    - name: Run security checks
+    - name: Run security checks (bandit)
       working-directory: code/Python
       run: |
         bandit -r .
