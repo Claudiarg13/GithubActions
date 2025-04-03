@@ -1,5 +1,3 @@
-# calculator.py
-
 def add(a, b):
     return a + b
 
@@ -17,12 +15,13 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero.")
     return a / b
 
+
 if __name__ == "__main__":
+
     print("Simple Calculator")
     a = float(input("Enter first number: "))
     b = float(input("Enter second number: "))
     op = input("Choose operation (+, -, *, /): ")
-
 
     if op == "+":
         print(f"Result: {add(a, b)}")
@@ -37,4 +36,3 @@ if __name__ == "__main__":
             print(e)
     else:
         print("Invalid operation.")
-
