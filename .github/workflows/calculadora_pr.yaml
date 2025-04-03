@@ -25,7 +25,6 @@ jobs:
 
     - name: Run linters (flake8)
       working-directory: code/Python
-      continue-on-error: true
       run: |
         flake8 .
 
