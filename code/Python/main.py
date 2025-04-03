@@ -3,11 +3,14 @@
 def add(a, b):
     return a + b
 
+
 def subtract(a, b):
     return a - b
 
+
 def multiply(a, b):
     return a * b
+
 
 def divide(a, b):
     if b == 0:
@@ -19,6 +22,7 @@ if __name__ == "__main__":
     a = float(input("Enter first number: "))
     b = float(input("Enter second number: "))
     op = input("Choose operation (+, -, *, /): ")
+
 
     if op == "+":
         print(f"Result: {add(a, b)}")
@@ -33,3 +37,4 @@ if __name__ == "__main__":
             print(e)
     else:
         print("Invalid operation.")
+
