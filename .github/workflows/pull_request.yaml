@@ -1,0 +1,6 @@
+Name: Pull_request
+
+on:
+  label:
+    types: [created]
+
