@@ -30,4 +30,4 @@ jobs:
       - name: First Step
         run: echo "Hello Girl"
       - name: Second Step
-        run: echo "You look amazing today"
+        run: echo ${{ github.event.inputs.debug_mode }}
