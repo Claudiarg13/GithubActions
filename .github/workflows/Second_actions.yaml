@@ -1,0 +1,23 @@
+name: second_action
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: First Step
+        run: echo "Hello World"
+      - name: Second Step
+        run: echo "I love your weather"
+  
+  hello-girl:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Second Step
+        run: echo "Hello Girl"
+      - name: Second Step
+        run: echo "You look amazing today"
