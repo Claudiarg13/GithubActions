@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: hello-world
     steps:
-      - name: Second Step
+      - name: First Step
         run: echo "Hello Girl"
       - name: Second Step
         run: echo "You look amazing today"
