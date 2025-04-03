@@ -10,4 +10,5 @@ jobs:
     steps:
       - name: First Step
         run: echo "Hello World"
-
+      - name: Second Step
+        run: echo "I love your weather"
