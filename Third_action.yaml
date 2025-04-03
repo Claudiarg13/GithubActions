@@ -1,0 +1,33 @@
+name: Second Action - Multiple Job Parallel Parameterized
+
+on: 
+  workflow_dispatch:
+    inputs:
+      debug_mode:
+        type: boolean
+        description: Debug
+        default: false
+        required: false
+      sample_value:
+        type: string
+        description: Cualquier valor
+        default: ""
+        required: false
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: First Step
+        run: echo "Hello World"
+      - name: Second Step
+        run: echo "I love your weather"
+  
+  hello-girl:
+    runs-on: ubuntu-latest
+    needs: hello-world
+    steps:
+      - name: First Step
+        run: echo "Hello Girl"
+      - name: Second Step
+        run: echo "You look amazing today"
